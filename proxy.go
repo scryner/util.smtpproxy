@@ -18,7 +18,7 @@ const (
 type Message struct {
 	From string
 	To   string
-	Data string
+	Data []byte
 }
 
 type Proxy struct {

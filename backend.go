@@ -55,7 +55,7 @@ func (s *session) Data(r io.Reader) error {
 		return fmt.Errorf("failed to read data: %v", err)
 	}
 
-	s.message.Data = string(b)
+	s.message.Data = b
 	s.out <- s.message
 
 	return nil
